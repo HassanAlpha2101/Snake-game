@@ -31,10 +31,8 @@ while game_is_on:
         food.refresh()
         score.increase_score()
 
-    for segment in snake.my_snake:
-        if segment == snake.head:
-            pass
-        elif snake.head.distance(segment) < 10:
+    for segment in snake.my_snake[1:]:
+        if snake.head.distance(segment) < 10:
             score.game_over()
             game_is_on = False
 
