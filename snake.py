@@ -47,4 +47,4 @@ class Snake:
             x_cord = self.my_snake[seg_num - 1].xcor()
             y_cord = self.my_snake[seg_num - 1].ycor()
             self.my_snake[seg_num].goto(x_cord, y_cord)
-        self.head.forward(10)
+        self.head.forward(20)
